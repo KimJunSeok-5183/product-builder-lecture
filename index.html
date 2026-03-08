@@ -1,22 +1,76 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Partnership | Professional Collaboration</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="theme-btn">Dark Mode</button>
-    </div>
-    <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <div class="numbers-container">
-        </div>
-        <button id="generate-btn">Generate</button>
-    </div>
+    <nav class="navbar">
+        <div class="logo">Collab.</div>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+            <span class="icon-sun">☀️</span>
+            <span class="icon-moon">🌙</span>
+        </button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>성공적인 비즈니스를 위한<br><span class="gradient-text">최고의 파트너십</span></h1>
+            <p>우리는 혁신적인 아이디어와 기술을 통해 새로운 가치를 창출합니다. 당신의 비전을 우리와 공유하고 함께 성장하세요.</p>
+        </section>
+
+        <section class="form-section">
+            <div class="card">
+                <h2>제휴 문의하기</h2>
+                <p class="subtitle">협업 제안이나 문의사항을 남겨주시면 검토 후 연락드리겠습니다.</p>
+                
+                <form action="https://formspree.io/f/mojkvroe" method="POST" id="contact-form">
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label for="name">성함 / 담당자</label>
+                            <input type="text" id="name" name="name" required placeholder="홍길동">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일 주소</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="example@company.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">회사명 / 소속</label>
+                        <input type="text" id="company" name="company" placeholder="회사명을 입력해주세요">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">문의 유형</label>
+                        <select id="subject" name="subject">
+                            <option value="partnership">비즈니스 제휴</option>
+                            <option value="marketing">마케팅 / 광고</option>
+                            <option value="investment">투자 문의</option>
+                            <option value="other">기타</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">문의 내용</label>
+                        <textarea id="message" name="message" required placeholder="구체적인 협업 내용을 작성해주세요."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">문의 보내기</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Collab Inc. All rights reserved.</p>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
